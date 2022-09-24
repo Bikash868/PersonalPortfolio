@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 
 const User = (props:any) => {
     let [searchParams, setSearchParams] = useSearchParams();
-  console.log(searchParams)
+    console.log(searchParams)
 
   return (
     <h1>User</h1>

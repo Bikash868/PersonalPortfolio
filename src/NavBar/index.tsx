@@ -4,10 +4,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import HomePage from '../Homepage';
-import About from '../About';
-import Services from '../Services';
+import Projects from '../Projects';
+import Timeline from '../Timeline';
 import Connect from '../Connect'
-import {menuItems} from '../Services/allData'
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -24,6 +24,7 @@ function TabPanel(props: TabPanelProps) {
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
+      className='z-40'
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
@@ -41,15 +42,16 @@ export default function NavBar() {
     setValue(newValue);
   };
 
-  const allTabs = ["Home","Projects","Services","Connect"]
+  const allTabs = ["Home","Projects","Timeline","Connect"]
 
   return (
-    <div className="w-full flex-column align-center justify-center">
+    <div className="w-full flex-column align-center justify-center z-40" style={{position:'sticky'}}>
       <Box className="flex align-center justify-between w-11/12 mx-10">
-        <div className="flex items-center font-semibold text-slate-500" style={{fontFamily:'Cedarville Cursive'}}>Bikash D</div>
+        <div className="flex items-center font-semibold text-white" style={{fontFamily:'Cedarville Cursive'}}>Bikash D</div>
         <Tabs value={value} onChange={handleChange}>
           {
-            allTabs.map((val,index)=><Tab label={val} className="font-medium" style={{textTransform:'none',fontFamily:'Cedarville Cursive'}}></Tab>)
+            allTabs.map((val,index) => 
+              <Tab label={val} className="font-medium" style={{textTransform:'none',fontFamily:'Cedarville Cursive',color:'white'}}></Tab>)
           }
         </Tabs>
       </Box>
@@ -57,10 +59,10 @@ export default function NavBar() {
         <HomePage/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <About/>
+        <Projects/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Services data = {menuItems}/>
+        <Timeline/>
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Connect/>
