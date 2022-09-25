@@ -4,11 +4,7 @@ import { ReactComponent as SchoolIcon } from "../Images/school.svg";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
 import {CodingProfileData} from './TimelineData'
-import { ReactComponent as CodechefIcon } from '../Images/codechef.svg'
 import { ReactComponent as HackerRankIcon } from '../Images/HackerRank.svg'
-import { ReactComponent as LeetCodeIcon } from '../Images/LeetCode.svg'
-import { ReactComponent as IbIcon} from '../Images/HackerRank.svg'
-import { ReactComponent as FullStarIcon } from '../Images/fullstar.svg'
 
 import { Link } from 'react-router-dom';
 import './index.css'

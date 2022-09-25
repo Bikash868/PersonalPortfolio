@@ -8,7 +8,6 @@ import ShareIcon from '@mui/icons-material/Share';
 import Button from '@mui/material/Button';
 import knowMoreImage from '../Images/knowMore.gif'
 
-import p1Image from '../Images/3js.png'
 
 
 interface ExpandMoreProps extends IconButtonProps {
