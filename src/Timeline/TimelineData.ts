@@ -42,31 +42,31 @@ export const TimelineData = [
       id: 1,
       title: "Codechef",
       userName: "biku123",
-      rating: "3*",
-      description: "",
+      rating: "2000",
+      description: "5*",
 
     },
     {
       id: 2,
       title: "HackerRank",
       userName: "biku123",
-      rating: "3*",
-      description: "",
+      rating: "2000+",
+      description: "6*",
       
     },
     {
       id: 3,
       title: "LeetCode",
       userName: "biku123",
-      rating: "3*",
-      description: "",
+      rating: "_",
+      description: "Solved 300+",
     },
     {
       id: 4,
       title: "Codeforces",
       userName: "biku123",
-      Rating: "3*",
-      description: "",
+      Rating: "2000",
+      description: "6*",
     }
   ];
 

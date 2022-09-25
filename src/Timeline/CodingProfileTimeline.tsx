@@ -8,6 +8,10 @@ import { ReactComponent as CodechefIcon } from '../Images/codechef.svg'
 import { ReactComponent as HackerRankIcon } from '../Images/HackerRank.svg'
 import { ReactComponent as LeetCodeIcon } from '../Images/LeetCode.svg'
 import { ReactComponent as IbIcon} from '../Images/HackerRank.svg'
+import { ReactComponent as FullStarIcon } from '../Images/fullstar.svg'
+
+import { Link } from 'react-router-dom';
+import './index.css'
 
 
 const CodingProfileTimeline = () => {
@@ -40,15 +44,22 @@ const CodingProfileTimeline = () => {
               key={element.id}
               dateClassName="timeLinedate"
               iconStyle={workIconStyles}
-            //   icon={WorkIcon}
+              contentStyle={{ background: '#F2F1F1', color: '#fff', borderTop:'4px solid #06D6A0',}}
+              contentArrowStyle={{ borderRight: '7px solid  #F2F1F1' }}
+              icon={<HackerRankIcon/>}
             >
-              <h3 className="vertical-timeline-element-title">
+              <h3 className="vertical-timeline-element-title text-center text-xl" style={{color:'#84377a'}}>
                 {element.title}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle">
-                {element.userName}{` `} {element.rating}
+              <h5 className="vertical-timeline-element-subtitle flex justify-evenly" style={{color:'rgb(100,50,100)'}}>
+                <span>
+                  <a href="https://leetcode.com/bikku01/" style={{textDecoration:'underline'}}>{element.userName}</a>
+                </span>
+                <span>
+                <span>Rating: {element.rating} ({element.description})</span>
+                </span>
               </h5>
-              <p id="description">{element.description}</p>
+              <p></p>
             </VerticalTimelineElement>
           );
         })}

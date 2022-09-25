@@ -19,12 +19,14 @@ const TimeLine = () => {
       <VerticalTimeline>
         {TimelineData.map((element) => {
           let isWorkIcon = element.icon === "work";
-
+          let topBorder = isWorkIcon ? workIconStyles.background : schoolIconStyles.background;
+          
           return (
             <VerticalTimelineElement
               key={element.id}
               date={element.date}
               dateClassName="timeLinedate"
+              contentStyle={{borderTop:`4px solid ${topBorder}`}}
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >

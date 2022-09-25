@@ -4,9 +4,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import HomePage from '../Homepage';
-import Projects from '../Projects';
+import Projects from '../Projects/index';
 import Timeline from '../Timeline';
-import Connect from '../Connect'
+import Connect from '../Connect/index'
+import '../Homepage/index.css'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -42,27 +43,35 @@ export default function NavBar() {
     setValue(newValue);
   };
 
-  const allTabs = ["Home","Projects","Timeline","Connect"]
+  const allTabs = ["Home","Timeline","Projects","Connect"]
 
   return (
-    <div className="w-full flex-column align-center justify-center z-40" style={{position:'sticky'}}>
+    <div className="w-full flex-column align-center justify-center z-40">
       <Box className="flex align-center justify-between w-11/12 mx-10">
-        <div className="flex items-center font-semibold text-white" style={{fontFamily:'Cedarville Cursive'}}>Bikash D</div>
+        <div className="flex items-center font-semibold text-white text-rainbow-animation" 
+          style={{fontFamily:'Cedarville Cursive'}}>
+            Bikash D
+        </div>
         <Tabs value={value} onChange={handleChange}>
           {
             allTabs.map((val,index) => 
               <Tab label={val} className="font-medium" style={{textTransform:'none',fontFamily:'Cedarville Cursive',color:'white'}}></Tab>)
           }
+          <span className='flex align-center justify-center text-white mt-3 ml-3' 
+            style={{fontFamily:'Cedarville Cursive'}}> 
+            Version: 1.0.0
+          </span>
         </Tabs>
+        
       </Box>
       <TabPanel value={value} index={0}>
         <HomePage/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Projects/>
+        <Timeline/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Timeline/>
+        <Projects/>
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Connect/>
