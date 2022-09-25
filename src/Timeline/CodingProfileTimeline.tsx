@@ -49,7 +49,7 @@ const CodingProfileTimeline = () => {
               </h3>
               <h5 className="vertical-timeline-element-subtitle flex justify-evenly" style={{color:'rgb(100,50,100)'}}>
                 <span>
-                  <a href="https://leetcode.com/bikku01/" style={{textDecoration:'underline'}}>{element.userName}</a>
+                  <a href={element.profile} style={{textDecoration:'underline'}}>{element.userName}</a>
                 </span>
                 <span>
                 <span>Rating: {element.rating} ({element.description})</span>

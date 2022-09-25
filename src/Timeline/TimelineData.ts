@@ -4,7 +4,7 @@ export const TimelineData = [
       title: "MAQ Software",
       location: "Hyderabad, Telengana",
       description: "Software Engineer 1",
-      techStack: "ReactJs | TypeScript | JavaScript | Power BI",
+      techStack: "ReactJs | TypeScript | JavaScript | Power BI | Agile",
       date: "August 2021 - September 2022",
       icon: "work",
     },
@@ -23,7 +23,7 @@ export const TimelineData = [
       location: "Bhubaneswar, Odisha",
       description: "Trainee",
       techStack: "Keras | Tensorflow | Open CV",
-      date: "September 2011",
+      date: "September 2019",
       icon: "work",
     },
     {
@@ -41,32 +41,45 @@ export const TimelineData = [
     {
       id: 1,
       title: "Codechef",
-      userName: "biku123",
+      userName: "bikku0",
       rating: "2000",
       description: "5*",
+      profile:"https://www.codechef.com/users/bibhu0"
 
     },
     {
       id: 2,
       title: "HackerRank",
       userName: "biku123",
-      rating: "2000+",
-      description: "6*",
+      rating: "(6*)",
+      description: "Intermediate Problem solving certification",
+      profile: "https://www.hackerrank.com/biku123"
       
     },
     {
       id: 3,
       title: "LeetCode",
-      userName: "biku123",
+      userName: "bikku01",
       rating: "_",
       description: "Solved 300+",
+      profile: "https://leetcode.com/bikku01/"
+
     },
     {
       id: 4,
       title: "Codeforces",
       userName: "biku123",
-      Rating: "2000",
-      description: "6*",
+      Rating: "_",
+      description: "4*",
+      profile: ""
+    },
+    {
+      id: 5,
+      title: "InterviewBit",
+      userName: "bikku01",
+      Rating: "_",
+      description: "_",
+      profile: "https://www.interviewbit.com/profile/bikku01"
     }
   ];
 
@@ -80,49 +93,49 @@ export const TimelineData = [
     {
         id:2,
         name: 'C',
-        yoe: '4+',
+        yoe: '4.5+',
         progress: 85
     },
     {
         id:1,
         name: 'React',
-        yoe: '4+',
+        yoe: '2.5',
         progress: 80
     },
     {
         id:1,
         name: 'TypeScript',
-        yoe: '4+',
+        yoe: '1',
         progress: 60
     },
     {
         id:1,
         name: 'JavaScript',
-        yoe: '4+',
+        yoe: '3',
         progress: 70
     },
     {
         id:1,
         name: 'MySQL',
-        yoe: '4+',
+        yoe: '1',
         progress: 75
     },
     {
         id:1,
         name: 'PowerBI',
-        yoe: '4+',
+        yoe: '0.25',
         progress: 65
     },
     {
         id:1,
         name: 'Agile',
-        yoe: '4+',
+        yoe: '1',
         progress: 70
     },
     {
         id:1,
         name: 'Git',
-        yoe: '4+',
+        yoe: '1.5',
         progress: 80
     }
  ]
