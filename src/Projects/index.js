@@ -1,7 +1,8 @@
-import React , { useState } from 'react'
+import React  from 'react'
 import Card from './Card'
 import Carousel from 'react-elastic-carousel';
 import './index.css'
+import {allProjects} from './ProjectData'
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 ,itemsToScroll: 1},
@@ -12,16 +13,20 @@ const breakPoints = [
 
 function Projects() {
 
-  const [value,setValue] = useState(0)
   return (
     <div className='flex w-full border-2 p-5 justify-center align-center' style={{height:'90%vh'}}>
       <Carousel breakPoints={breakPoints}>
-          {/* <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/> */}
-          {[...new Array(10)].map((ele,i)=><div><Card/></div>)}
+          {allProjects.map((project,index)=>
+            <div key={project.id}>
+              <Card
+                id = {index}
+                name = {project.name}
+                description = {project.description}
+                techStack = {project.techStack}
+                knowMoreUrl = {project.knowMoreUrl}
+                imageUrl = {project.imageUrl}
+              />
+            </div>)}
         </Carousel>
     </div>
   )
@@ -29,5 +34,3 @@ function Projects() {
 
 
 export default Projects
-
-

@@ -1,8 +1,7 @@
 import React from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import { hover } from '@testing-library/user-event/dist/hover';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
   const IconStyle = {
@@ -17,7 +16,8 @@ const Footer = () => {
   }
 
   const handleMailClick = () => {
-    window.location.assign("mailto:ursbikash868@gmail.com");
+    // window.location.assign("mailto:ursbikash868@gmail.com");
+    window.open('https://github.com/Bikash868?tab=repositories')
   }
 
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
       <div className='space-x-5'>
         <InstagramIcon className='hover:scale-125 ease-in duration-500 cursor-pointer' style={IconStyle} onClick = {handleInstaClick}/>
         <LinkedInIcon className='scale-100 hover:scale-125 ease-in duration-500 cursor-pointer' style={IconStyle} onClick = {handleLinkedInClick}/>
-        <EmailIcon className='scale-100 hover:scale-125 ease-in duration-500 cursor-pointer' 
+        <GitHubIcon className='scale-100 hover:scale-125 ease-in duration-500 cursor-pointer' 
           style={IconStyle} 
           onClick = {handleMailClick}/>
       </div>
