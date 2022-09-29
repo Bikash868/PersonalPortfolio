@@ -5,7 +5,7 @@ import './index.css'
 const description = () => {
 
   const handleResumeDownload = () => {
-    window.open("https://drive.google.com/file/d/1Pezo6gkVCNX7411HoHGwCVRqCTgPjQbS/view")
+    window.open("https://drive.google.com/file/d/1Tt71SkiW1mjJkLMY2MVWCJxNABzaqb09/view?usp=sharing")
   }
 
   const handleHire = () => {

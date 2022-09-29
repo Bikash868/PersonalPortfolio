@@ -28,7 +28,7 @@ export const allProjects = [
         name:'Classify Radio Signals',
         imageUrl: "./Images/rsip.png",
         description: "Built and trained a convolutional neural network (CNN) model using Keras to classify the class of radio signals in SETI dataset",
-        techStack: ["Keras","Tensorflow","OpenCV"],
+        techStack: ["Keras","CNN","OpenCV"],
         knowMoreUrl: "https://colab.research.google.com/drive/1zfWKUfOkagOfvL9AcZuSeeynTtN85gat?usp=sharing"
     },
     {
@@ -36,7 +36,7 @@ export const allProjects = [
         name:'Tomato leaf Disease Analysis',
         imageUrl: "./Images/tlip.png",
         description: "Built and trained a deep neural network model using Keras to detect disease on a new leaf in tomat leaf disease dataset",
-        techStack: ["Keras","Tensorflow","OpenCV"],
+        techStack: ["Python","Keras","OpenCV"],
         knowMoreUrl: "https://colab.research.google.com/drive/1Q4h_6L6Pfgbyc9rvgduM1j8m8R1ukqAC?usp=sharing"
     },
     {

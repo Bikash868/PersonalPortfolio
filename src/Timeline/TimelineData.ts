@@ -99,32 +99,32 @@ export const TimelineData = [
     {
         id:1,
         name: 'React',
-        yoe: '2.5',
-        progress: 80
+        yoe: '3+',
+        progress: 85
     },
     {
         id:1,
         name: 'TypeScript',
-        yoe: '1',
+        yoe: '1+',
         progress: 60
     },
     {
         id:1,
         name: 'JavaScript',
-        yoe: '3',
+        yoe: '3+',
         progress: 70
     },
     {
         id:1,
         name: 'MySQL',
-        yoe: '1',
+        yoe: '2+',
         progress: 75
     },
     {
         id:1,
         name: 'PowerBI',
         yoe: '0.25',
-        progress: 65
+        progress: 35
     },
     {
         id:1,
