@@ -29,7 +29,7 @@ const Footer = () => {
           style={IconStyle} 
           onClick = {handleMailClick}/>
       </div>
-      <span className='text-sm mt-2' style={{fontFamily:'Cedarville Cursive'}}>© 2022 Bikash Das. All rights reserved</span>
+      <span className='text-sm mt-2' style={{fontFamily:'Cedarville Cursive'}}>© 2022 Bikash Das. All rights reserved | Vews: 200</span>
     </div>
   )
 }

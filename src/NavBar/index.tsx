@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useState,useEffect} from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
@@ -8,6 +8,7 @@ import Projects from '../Projects/index';
 import Timeline from '../Timeline';
 import Connect from '../Connect/index'
 import '../Homepage/index.css'
+import axios from "axios";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -37,8 +38,17 @@ function TabPanel(props: TabPanelProps) {
 }
 
 export default function NavBar() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
+  const [viewCount,setViewCount] = useState(0);
 
+  async function getViewCount() {
+    let {data,status} = await axios.get('https://api.countapi.xyz/update/portfolio/bikashd/?amount=1');
+    setViewCount(data?.value)
+  }
+
+  useEffect(()=> {
+    getViewCount()
+  },[])
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -59,7 +69,7 @@ export default function NavBar() {
           }
           <span className='flex align-center justify-center text-white mt-3 ml-3' 
             style={{fontFamily:'Cedarville Cursive'}}> 
-            Version: 1.0.0
+            View Count: {viewCount}
           </span>
         </Tabs>
         
