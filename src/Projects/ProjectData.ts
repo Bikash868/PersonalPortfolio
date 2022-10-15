@@ -47,4 +47,12 @@ export const allProjects = [
         techStack: ["React","TypeScript","JavaScript"],
         knowMoreUrl: "https://github.com/Bikash868/PersonalPortfolio"
     },
+    {
+        id: 7,
+        name:'Meeting Schedule Screen',
+        imageUrl: "./Images/mss.jpg",
+        description: "Built a Meeting Schedule Screen to schedule meeting/ interviews",
+        techStack: ["React","TypeScript","JavaScript"],
+        knowMoreUrl: "https://Bikash868.github.io/meeting-screen"
+    },
 ]
