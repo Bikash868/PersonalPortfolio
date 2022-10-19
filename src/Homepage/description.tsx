@@ -1,8 +1,10 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React,{useContext} from 'react'
 import './index.css'
+import { user } from '../Contexts/Context'
 
 const description = () => {
+  // const {val} = useContext<any>(user);
 
   const handleResumeDownload = () => {
     window.open("https://drive.google.com/file/d/1Tt71SkiW1mjJkLMY2MVWCJxNABzaqb09/view?usp=sharing")
